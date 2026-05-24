@@ -1,0 +1,37 @@
+/* Import base Tailwind styles */
+@reference "../../index.css";
+
+/* Centered column layout for the bill summary page */
+.bill-container {
+	@apply max-w-3xl mx-auto mt-8 p-4 space-y-6 text-center;
+}
+
+/* Page heading */
+.bill-head-text {
+	@apply text-2xl font-bold;
+}
+
+/* Card container for the itemized bill */
+.bill-main {
+	@apply bg-gray-50 p-4 rounded-lg shadow-sm text-left space-y-2;
+}
+
+/* "Your Bill" section title */
+.bill-text {
+	@apply text-xl font-semibold mb-2;
+}
+
+/* Individual line item row — bottom border removed on last item */
+.bill-items {
+	@apply flex justify-between py-1 text-sm border-b last:border-0;
+}
+
+/* Total row at the bottom of the bill */
+.total-container {
+	@apply flex justify-between font-bold text-base pt-2;
+}
+
+/* Amber "Back to Home" button */
+.back-btn {
+	@apply inline-block bg-amber-400 hover:bg-amber-500 text-black font-semibold px-6 py-2 rounded-md transition;
+}
