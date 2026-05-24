@@ -1,0 +1,27 @@
+/* Import base Tailwind styles */
+@reference "../../index.css";
+
+/* Outer wrapper — stacks main image above thumbnails */
+.image-gallery {
+	@apply flex flex-col gap-3;
+}
+
+/* Main selected image */
+.image-gallery-main {
+	@apply w-full h-72 object-contain rounded-lg border bg-gray-50;
+}
+
+/* Thumbnail strip — scrollable row */
+.image-gallery-thumbs {
+	@apply flex gap-2 overflow-x-auto;
+}
+
+/* Individual thumbnail */
+.image-gallery-thumb {
+	@apply w-16 h-16 object-cover rounded border cursor-pointer opacity-60 hover:opacity-100 transition;
+}
+
+/* Active/selected thumbnail */
+.image-gallery-thumb.active {
+	@apply opacity-100 border-amber-400 border-2;
+}

@@ -1,0 +1,27 @@
+/* Import base Tailwind styles */
+@reference "../../index.css";
+
+/* Review card — bordered card with subtle shadow */
+.review-card {
+	@apply flex flex-col gap-1 border border-gray-200 rounded-xl p-4 shadow-sm bg-white;
+}
+
+/* Reviewer name */
+.review-name {
+	@apply text-sm font-bold text-gray-900;
+}
+
+/* Star rating */
+.review-stars {
+	@apply text-sm;
+}
+
+/* Review body text */
+.review-comment {
+	@apply text-sm text-gray-700 leading-relaxed;
+}
+
+/* Secondary info — date and email */
+.review-meta {
+	@apply text-xs text-gray-400;
+}

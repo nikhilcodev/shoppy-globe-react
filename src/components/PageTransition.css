@@ -1,0 +1,12 @@
+/* Import base Tailwind styles */
+@reference "../index.css";
+
+/* Base state — hidden and shifted down slightly before transition */
+.page-transition {
+	@apply opacity-0 translate-y-2 transition-all duration-300 ease-out;
+}
+
+/* Visible state — fully opaque and in position */
+.page-transition.visible {
+	@apply opacity-100 translate-y-0;
+}
