@@ -1,0 +1,27 @@
+/* Import base Tailwind styles */
+@reference "../index.css";
+
+/* Full screen centered layout */
+.offline-container {
+	@apply fixed inset-0 flex flex-col items-center justify-center gap-4 text-center px-4;
+}
+
+/* Satellite emoji */
+.offline-icon {
+	@apply text-4xl;
+}
+
+/* Main heading */
+.offline-title {
+	@apply text-2xl font-bold text-gray-900;
+}
+
+/* Subtext */
+.offline-message {
+	@apply text-gray-500 text-sm;
+}
+
+/* Retry button */
+.offline-btn {
+	@apply mt-2 bg-amber-400 hover:bg-amber-500 active:scale-95 text-black font-semibold px-6 py-2 rounded-md transition;
+}
