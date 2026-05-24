@@ -1,0 +1,53 @@
+@reference "../index.css";
+
+.checkout-container {
+	@apply max-w-3xl mx-auto mt-8 p-4 space-y-6;
+}
+
+.checkout-heading {
+	@apply text-2xl font-bold text-center;
+}
+
+.checkout-table {
+	@apply w-full border-collapse shadow-sm rounded-lg;
+}
+
+.table-header {
+	@apply bg-gray-100 text-sm;
+}
+
+.cart-empty-text {
+	@apply text-center mt-16 text-lg;
+}
+
+.table-head-left {
+	@apply border px-4 py-2 text-left;
+}
+
+.table-row {
+	@apply text-center text-sm hover:bg-gray-50 transition;
+}
+
+.table-head {
+	@apply border px-4 py-2;
+}
+
+.total-container {
+	@apply font-semibold bg-gray-100 text-sm;
+}
+
+.total-text {
+	@apply border px-4 py-2 text-left;
+}
+
+.total {
+	@apply border px-4 py-2 text-center;
+}
+
+.confirm {
+	@apply text-center;
+}
+
+.confirm-btn {
+	@apply bg-amber-400 hover:bg-amber-500 text-black font-semibold px-6 py-2 rounded-md transition;
+}
