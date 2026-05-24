@@ -1,0 +1,32 @@
+/* Import base Tailwind styles */
+@reference "../index.css";
+
+/* Footer wrapper — top border separator, subtle background */
+footer {
+	@apply border-t border-gray-200 bg-white py-6;
+}
+
+/* Inner layout — stacks vertically on mobile, row on md+ */
+.footer-container {
+	@apply w-full mx-auto max-w-7xl px-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4;
+}
+
+/* Copyright text */
+.footer-content {
+	@apply text-sm text-gray-500 text-center md:text-left;
+}
+
+/* Brand name link inside copyright */
+.footer-brand {
+	@apply text-gray-800 font-semibold hover:text-amber-500 transition-colors;
+}
+
+/* Nav links row */
+.footer-links {
+	@apply flex flex-wrap justify-center md:justify-end items-center gap-4 text-sm font-medium;
+}
+
+/* Individual nav link */
+.footer-link {
+	@apply text-gray-500 hover:text-amber-500 transition-colors;
+}
