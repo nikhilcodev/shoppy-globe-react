@@ -1,0 +1,42 @@
+/* Import base Tailwind styles */
+@reference "../../index.css";
+
+/* Stacked list of product metadata */
+.product-info {
+	@apply flex flex-col gap-2;
+}
+
+/* Individual label/value row */
+.product-info p {
+	@apply text-sm text-gray-700;
+}
+
+/* Bold label inside each row */
+.product-info strong {
+	@apply font-semibold text-gray-900;
+}
+
+/* Stock status badge */
+.stock-status {
+	@apply inline-block w-fit px-3 py-1 rounded-full text-xs font-bold tracking-wide mt-1;
+}
+
+/* In stock — green */
+.stock-status.in {
+	@apply bg-green-100 text-green-700;
+}
+
+/* Out of stock — red */
+.stock-status.out {
+	@apply bg-red-100 text-red-600;
+}
+
+/* Base button styles */
+.add-to-cart-btn {
+	@apply w-full py-2 rounded-lg text-sm font-bold tracking-wide transition-all duration-150 mt-2 bg-amber-400 hover:bg-amber-500 active:scale-95 text-black;
+}
+
+/* Disabled state — out of stock or already in cart */
+.add-to-cart-btn.disabled {
+	@apply bg-gray-100 text-gray-400 cursor-not-allowed border border-gray-200 hover:bg-gray-100 active:scale-100;
+}
