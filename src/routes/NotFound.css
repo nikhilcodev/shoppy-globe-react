@@ -1,0 +1,37 @@
+/* Import base Tailwind styles */
+@reference "../index.css";
+
+/* Full screen centered layout */
+.nf-main-container {
+	@apply min-h-screen bg-white flex flex-col items-center justify-center text-center px-4;
+}
+
+/* Large 404 number */
+.nf-main-text {
+	@apply text-8xl font-bold text-slate-500;
+}
+
+/* Page not found heading */
+.nf-sub-text {
+	@apply mt-4 text-2xl font-semibold text-gray-800;
+}
+
+/* Subtext description */
+.nf-error-text {
+	@apply mt-2 text-gray-500 text-sm;
+}
+
+/* Button row */
+.nf-nav {
+	@apply mt-8 flex gap-3;
+}
+
+/* Primary — go home button */
+.nf-home-link {
+	@apply px-5 py-2 bg-slate-500 hover:bg-slate-600 text-white text-sm rounded-lg transition-colors;
+}
+
+/* Secondary — go back button */
+.nf-back-link {
+	@apply px-5 py-2 border border-gray-200 hover:bg-gray-50 text-gray-600 text-sm rounded-lg transition-colors;
+}
