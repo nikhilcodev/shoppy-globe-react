@@ -1,0 +1,7 @@
+/* Import base Tailwind styles */
+@reference "../index.css";
+
+/* Centered column layout with red text for error display */
+.error-container {
+	@apply flex flex-col items-center justify-center p-6 text-red-600;
+}
