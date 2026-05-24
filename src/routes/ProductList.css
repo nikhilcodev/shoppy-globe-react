@@ -1,0 +1,13 @@
+@reference "../index.css";
+
+.products-container {
+	@apply max-w-7xl mx-auto px-4;
+}
+
+.products-title {
+	@apply text-center font-semibold text-2xl mt-6 mb-6;
+}
+
+.product-container {
+	@apply grid xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-6 mx-auto;
+}
