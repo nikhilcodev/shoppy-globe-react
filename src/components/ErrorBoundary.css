@@ -1,0 +1,31 @@
+/* Import base Tailwind styles */
+@reference "../index.css";
+
+/* Centered column layout for the error boundary fallback UI */
+.error-boundary {
+	@apply flex flex-col items-center justify-center gap-3 px-6 py-12 text-center;
+}
+
+/* Bold title text */
+.error-boundary-title {
+	@apply text-xl font-semibold;
+	color: var(--color-text-primary, #111);
+}
+
+/* Subdued secondary message text */
+.error-boundary-message {
+	@apply text-sm;
+	color: var(--color-text-secondary, #666);
+	font-size: 0.9rem;
+}
+
+/* Amber "Try again" button with smooth background transition */
+.error-boundary-btn {
+	@apply mt-2 px-5 py-2 rounded-md text-sm font-medium text-black;
+	background: #fbbf24;
+	transition: background 0.15s ease;
+}
+
+.error-boundary-btn:hover {
+	background: #f59e0b;
+}
