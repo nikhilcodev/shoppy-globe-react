@@ -1,0 +1,7 @@
+/* Import base Tailwind styles */
+@reference "../index.css";
+
+/* Header wrapper — spans full width, sits above page content */
+header {
+	@apply w-full shadow-sm;
+}
