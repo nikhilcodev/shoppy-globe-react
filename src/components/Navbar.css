@@ -1,0 +1,27 @@
+/* Import base Tailwind styles */
+@reference "../index.css";
+
+/* Main navbar row — logo on the left, actions on the right */
+.navbar-main {
+	@apply flex flex-wrap justify-between items-center mx-auto max-w-7xl p-4;
+}
+
+/* Logo + brand name link */
+.navbar-link {
+	@apply flex items-center space-x-3 rtl:space-x-reverse;
+}
+
+/* Brand name text */
+.navbar-title {
+	@apply self-center text-xl font-semibold whitespace-nowrap;
+}
+
+/* Right side actions — cart and any future nav items */
+.navbar-actions {
+	@apply flex items-center space-x-6 rtl:space-x-reverse;
+}
+
+/* Cart icon button — subtle hover background */
+.cart-btn {
+	@apply text-sm font-medium hover:underline rounded-xl hover:bg-slate-300 hover:border-gray-200 hover:border-2 p-1;
+}
