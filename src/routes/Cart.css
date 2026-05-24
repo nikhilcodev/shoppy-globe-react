@@ -1,0 +1,37 @@
+@reference "../index.css";
+
+.cart-container-empty {
+	@apply fixed inset-0 flex flex-col items-center justify-center gap-4;
+}
+
+.cart-container {
+	@apply max-w-4xl mx-auto p-6 space-y-6;
+}
+
+.cart-empty {
+	@apply text-2xl font-semibold;
+}
+
+.cart-title {
+	@apply text-2xl font-bold text-center;
+}
+
+.cart-items {
+	@apply space-y-4;
+}
+
+.shop-btn {
+	@apply text-amber-500 hover:bg-amber-500 hover:text-white rounded p-2 border;
+}
+
+.total-container {
+	@apply flex justify-between items-center border-t pt-4;
+}
+
+.total-text {
+	@apply text-xl font-semibold;
+}
+
+.checkout-btn {
+	@apply bg-amber-400 hover:bg-amber-500 text-black font-semibold px-4 py-2 rounded-md transition;
+}
