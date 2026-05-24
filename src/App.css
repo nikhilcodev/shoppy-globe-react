@@ -1,0 +1,9 @@
+@reference "./index.css";
+
+main {
+	@apply grow;
+}
+
+.main-container {
+	@apply flex flex-col h-screen;
+}
